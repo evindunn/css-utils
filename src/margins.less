@@ -1,0 +1,47 @@
+._m(@direction, @size) {
+    margin-@{direction}: if((@size = 0), 0, @size);
+}
+
+._mx(@size) {
+    ._m(left, @size);
+    ._m(right, @size);
+}
+
+._my(@size) {
+    ._m(top, @size);
+    ._m(bottom, @size);
+}
+
+// Define
+._gen-margin-utilities(@counter) when (@counter >= 0) {
+    @currentSize: 1rem * @counter;
+
+    .mt-@{counter} {
+        ._m(top, @currentSize);
+    }
+
+    .mb-@{counter} {
+        ._m(bottom, @currentSize);
+    }
+
+    .ml-@{counter} {
+        ._m(left, @currentSize);
+    }
+
+    .mr-@{counter} {
+        ._m(right, @currentSize);
+    }
+
+    .mx-@{counter} {
+        ._mx(@currentSize);
+    }
+
+    .my-@{counter} {
+        ._my(@currentSize);
+    }
+
+    ._gen-margin-utilities((@counter - 1));
+}
+
+// Call
+._gen-margin-utilities(5);

@@ -1,0 +1,15 @@
+// Define
+._generate-sizing-utils(@counter) when (@counter > 0) {
+    .w-@{counter} {
+        width: percentage(@counter / 10);
+    }
+
+    .h-@{counter} {
+        height: percentage(@counter / 10);
+    }
+
+    ._generate-sizing-utils((@counter - 1));
+}
+
+// Call
+._generate-sizing-utils(9);

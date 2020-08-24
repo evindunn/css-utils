@@ -1,0 +1,50 @@
+@import "./margins";
+
+@grid-x-margin: 1rem;
+@grid-y-margin: 1rem;
+
+._col-all {
+    ._mx(@grid-x-margin);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    ._my(@grid-y-margin);
+
+    @media screen and (max-width: 400px) {
+        display: block;
+    }
+}
+
+.col {
+    flex-grow: 1;
+    ._col-all();
+}
+
+.col-auto {
+    flex-shrink: 1;
+    ._col-all();
+}
+
+.align-items-start {
+    align-items: start;
+
+    > .row {
+        align-items: start;
+    }
+}
+
+// Declare
+._generate-col-classes(@counter) when (@counter > 0) {
+    .col-@{counter} {
+        .col();
+        width: percentage(@counter / 10);
+        overflow: hidden;
+    }
+
+    ._generate-col-classes((@counter - 1));
+}
+
+// Call
+._generate-col-classes(9);
