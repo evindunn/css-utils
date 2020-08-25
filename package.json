@@ -1,11 +1,10 @@
 {
     "name": "@evindunn/css-utils",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "",
     "main": "dist/css-utils.css",
     "scripts": {
-        "build": "webpack",
-        "prepublish": "npm run build"
+        "build": "webpack"
     },
     "author": "Evin Dunn",
     "homepage": "https://github.com/evindunn/css-utils",
