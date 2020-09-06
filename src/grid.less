@@ -2,6 +2,7 @@
 
 @grid-x-margin: 1rem;
 @grid-y-margin: 1rem;
+@phone-max-width: 400px;
 
 ._col-all {
     ._mx(@grid-x-margin);
@@ -12,7 +13,7 @@
     align-items: center;
     ._my(@grid-y-margin);
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: @phone-max-width) {
         display: block;
     }
 }
@@ -25,6 +26,10 @@
 .col-auto {
     flex-shrink: 1;
     ._col-all();
+    
+    @media screen and (max-width: @phone-max-width) {
+        display: inline-block;
+    }
 }
 
 .align-items-start {
