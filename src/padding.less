@@ -1,0 +1,55 @@
+._p(@direction, @size) {
+    padding-@{direction}: if((@size = 0), 0, @size);
+}
+
+._px(@size) {
+    ._p(left, @size);
+    ._p(right, @size);
+}
+
+._py(@size) {
+    ._p(top, @size);
+    ._p(bottom, @size);
+}
+
+// Define
+._gen-padding-utilities(@counter) when (@counter >= 0) {
+    @currentSize: 1rem * @counter;
+
+    .pt-@{counter} {
+        ._p(top, @currentSize);
+    }
+
+    .pb-@{counter} {
+        ._p(bottom, @currentSize);
+    }
+
+    .pl-@{counter} {
+        ._p(left, @currentSize);
+    }
+
+    .pr-@{counter} {
+        ._p(right, @currentSize);
+    }
+
+    .px-@{counter} {
+        ._px(@currentSize);
+    }
+
+    .py-@{counter} {
+        ._py(@currentSize);
+    }
+
+    ._gen-padding-utilities((@counter - 1));
+}
+
+// Call
+._gen-padding-utilities(5);
+
+.px-auto {
+    ._px(auto);
+}
+
+.py-auto {
+    ._py(auto);
+}
