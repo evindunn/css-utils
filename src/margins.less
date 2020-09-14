@@ -16,6 +16,11 @@
 ._gen-margin-utilities(@counter) when (@counter >= 0) {
     @currentSize: 1rem * @counter;
 
+    .m-@{counter} {
+        ._mx(@currentSize);
+        ._my(@currentSize);
+    }
+
     .mt-@{counter} {
         ._m(top, @currentSize);
     }

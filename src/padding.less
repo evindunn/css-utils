@@ -16,6 +16,11 @@
 ._gen-padding-utilities(@counter) when (@counter >= 0) {
     @currentSize: 1rem * @counter;
 
+    .p-@{counter} {
+        ._px(@currentSize);
+        ._py(@currentSize);
+    }
+
     .pt-@{counter} {
         ._p(top, @currentSize);
     }
