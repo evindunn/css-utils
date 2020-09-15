@@ -41,6 +41,30 @@
     }
 }
 
+.align-items-end {
+    align-items: end;
+
+    > .row {
+        align-items: end;
+    }
+}
+
+.justify-content-center {
+    justify-content: center;
+
+    > .row {
+        justify-content: center;
+    }
+}
+
+.justify-content-end {
+    justify-content: end;
+
+    > .row {
+        justify-content: end;
+    }
+}
+
 // Declare
 ._generate-col-classes(@counter) when (@counter > 0) {
     .col-@{counter} {
