@@ -1,0 +1,40 @@
+@mixin mx($margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin my($margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@for $sz from 0 through 5 {
+  .m-#{$sz} {
+    @include mx(#{$sz}rem);
+    @include my(#{$sz}rem);
+  }
+
+  .mx-#{$sz} {
+    @include mx(#{$sz}rem);
+  }
+
+  .my-#{$sz} {
+    @include mx(#{$sz}rem);
+  }
+
+  .mt-#{$sz} {
+    margin-left: #{$sz}rem;
+  }
+
+  .mb-#{$sz} {
+    margin-left: #{$sz}rem;
+  }
+
+  .ml-#{$sz} {
+    margin-left: #{$sz}rem;
+  }
+
+  .mr-#{$sz} {
+    margin-left: #{$sz}rem;
+  }
+}

@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bd27d5f-1b81-4f97-bce1-75f2dfbd2c32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/margins.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/margins.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/display.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/margins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/padding.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sizing.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +38,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.12.58" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.5" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.31" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -75,28 +85,22 @@
       <workItem from="1600107458168" duration="44000" />
       <workItem from="1600107654564" duration="286000" />
       <workItem from="1600208029595" duration="110000" />
+      <workItem from="1614048645045" duration="3154000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598334789068">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1598334789068" />
-    <state x="370" y="344" width="530" height="416" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598279781705">
-      <screen x="0" y="27" width="2560" height="1053" />
-    </state>
-    <state x="370" y="344" width="530" height="416" key="#com.intellij.fileTypes.FileTypeChooser/0.27.2560.1053@0.27.2560.1053" timestamp="1598279781705" />
-    <state x="456" y="188" key="SettingsEditor" timestamp="1598335907065">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="456" y="188" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1598335907065" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1598335173407">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1598335173407" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
